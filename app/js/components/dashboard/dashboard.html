@@ -1,0 +1,18 @@
+<div>
+	<div class="panel panel-default" ng-show="dashboard.loading">
+		<div class="panel-body">
+			{{dashboard.message}}
+		</div>
+	</div>
+	<div class="col-md-3" ng-repeat="day in forecast | orderBy:day.time" ng-hide="dashboard.loading">
+		<h4>{{day.time | day}}</h4>
+		<i ng-class="{{day.icon}}"></i>
+		<p>{{day.summary}}</p>
+		<ul class="list-group">
+			<li ng-class="day.temperature.nice ? 'list-group-item-success' : 'list-group-item-danger'" class="list-group-item"><strong>Temp: </strong>{{day.temperature.val | degrees}}</li>
+			<li ng-class="day.wind.nice ? 'list-group-item-success' : 'list-group-item-danger'" class="list-group-item"><strong>Wind: </strong>{{day.wind.val | wind}}</li>
+			<li ng-class="day.clouds.nice ? 'list-group-item-success' : 'list-group-item-danger'" class="list-group-item"><strong>Clouds: </strong>{{day.clouds.val | clouds}}</li>
+			<li ng-class="day.precipitation.nice ? 'list-group-item-success' : 'list-group-item-danger'" class="list-group-item"><strong>Precipitation: </strong>{{day.precipitation.val | precipitation }}</li>
+		</ul>
+	</div>
+</div>

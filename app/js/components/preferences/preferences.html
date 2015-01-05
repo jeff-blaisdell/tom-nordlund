@@ -1,0 +1,100 @@
+<div>
+	<form ng-model="preferences">
+		<div class="form-group">
+			<p>In what temperature do you like to do things outside?</p>
+			<div class="radio">
+				<label>
+					<input type="radio" name="cold" id="cold" value="cold" ng-model="preferences.temperature">
+					Cold
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="warm" id="warm" value="warm" ng-model="preferences.temperature">
+					Warm
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="hot" id="hot" value="hot" ng-model="preferences.temperature">
+					Hot
+				</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<p>Do you like wind?</p>
+			<div class="radio">
+				<label>
+					<input type="radio" name="wind_yes" id="wind_yes" value="yes" ng-model="preferences.wind">
+					Yes
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="wind_no" id="wind_no" value="no" ng-model="preferences.wind">
+					No
+				</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<p>What kind of cloud cover do you like?</p>
+			<div class="radio">
+				<label>
+					<input type="radio" name="clear" id="clear" value="clear" ng-model="preferences.clouds">
+					Clear
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="scattered" id="scattered" value="scattered" ng-model="preferences.clouds">
+					Scattered
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="broken" id="broken" value="broken" ng-model="preferences.clouds">
+					Broken
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="overcast" id="overcast" value="overcast" ng-model="preferences.clouds">
+					Overcast
+				</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<p>Do you prefer rain, snow, sleet, or hail?</p>
+			<div class="radio">
+				<label>
+					<input type="radio" name="rain" id="rain" value="rain" ng-model="preferences.precipitation">
+					Rain
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="snow" id="snow" value="snow" ng-model="preferences.precipitation">
+					Snow
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="sleet" id="sleet" value="sleet" ng-model="preferences.precipitation">
+					Sleet
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="hail" id="hail" value="hail" ng-model="preferences.precipitation">
+					Hail
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="none" id="none" value="none" ng-model="preferences.precipitation">
+					None
+				</label>
+			</div>
+		</div>
+	</form>
+</div>
